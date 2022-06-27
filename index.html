@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ma carte de visite</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header class="flex">
+            <ul class="flex menu">
+                <li><a href="#accueil">ACCUEIL</a></li>
+                <li><a href="#CV">MON CV</a></li>
+                <li><a href="#Contact">FORMULAIRE</a></li>      
+            </ul>
+
+            <div class="name">
+                <h1>Terry BOEUF</h1>
+            </div>
+            <ul class="flex liens">
+                <li><a href="https://www.linkedin.com/in/wyllwyll-undefined-754580242/" target="blank"><img src="images/lk.svg" class="img-liens" alt="linkedin"></a></li>
+                <li><a href="https://www.facebook.com/wyllwylll/" target="blank"><img src="images/fb.svg" class="img-liens" alt="facebook"></a></li>
+                <li><a href="https://github.com/Wyllwyll" target="blank"><img src="images/git.svg" class="img-liens" alt="github"></a></li> 
+                <li><a href="https://openclassrooms.com/fr/members/9dggj7wn3104" target="blank"><img src="images/opennoir.png" class="img-liens" alt="openclassroom"></a></li>     
+            </ul>
+        </header>
+
+        <section class="flex">        
+            <div class="élément">
+                <h2 id="accueil">Bonjour!</h2>
+
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus ultrices et risus vel maximus. Morbi porta scelerisque vestibulum. 
+                Nullam ut ultrices nisl, vel lobortis lacus. Etiam laoreet, urna sit amet varius euismod, libero nunc posuere nisl, 
+                a vestibulum purus lectus eu velit. In egestas aliquet risus. Nulla dignissim finibus finibus. Proin tincidunt vulputate odio sit amet molestie. 
+                Integer congue lectus vel elit cursus tincidunt ut a lorem. Donec nec purus lorem. Sed congue tortor tellus, id sagittis augue commodo ac. Nulla facilisi. 
+                Integer pretium, lacus a molestie laoreet, turpis turpis mattis leo, eu facilisis risus nunc et est. Ut non dignissim enim.
+                </p>
+    
+                <ul>
+                    <li>ex1</li>
+                    <li>ex2</li>
+                    <li>ex3</li>
+                </ul> 
+            </div> 
+            
+            <div class="avatar">             
+                <img src="images/code_img.jpg" id="avatar" alt="image code">
+            </div>
+        </section>
+        <section>
+            <h2 id="CV">Mon CV</h2>
+            <div class="élément">
+                <iframe src="images/CV.pdf" width="100%" height="1175px"> </iframe>
+            </div>
+
+        </section>
+        
+        <section>
+            <h2 id="Contact">Formulaire de contact</h2>
+            <p class="description">Pour toute question n'hésitez pas à m'envoyer un message via le formulaire ci-dessous.</p>
+
+            <form action="/ma-page-de-traitement" method="post">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                    <label for="mail">e-mail&nbsp;:</label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+                <div>
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Envoyer le message</button>
+                </div>
+            </form> 
+
+        </section>
+        
+    </body>
+</html>
